@@ -1,5 +1,5 @@
 {
-    "name": "smyrilline-flags",
+    "name": "flags",
     "version": "0.1.0",
     "description": "Smyrilline Flags",
     "license": "Apache-2.0",
@@ -23,6 +23,6 @@
         "minify": "gulp minify"
     },
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@smyrilline"
+        "registry": "https://npm.pkg.github.com/@smyrilline/flags"
     }
 }

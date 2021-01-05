@@ -24,14 +24,14 @@ const AUTOPREFIXER_BROWSERS = [
 gulp.task('img', function () {
     del(['dist'])
     return gulp.src('css_sprites_compressed.png')
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('./../dist/'));
 });
 
 gulp.task('style', function () {
     return gulp.src('flags.css')
         //.pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
         .pipe(csso())
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('./../dist/'))
 });
 
 gulp.task('default', gulp.series('img', 'style'));
